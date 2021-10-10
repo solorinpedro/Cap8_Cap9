@@ -1,0 +1,38 @@
+﻿<Window x:Class="Cap8_Cap9.Cap9_ejercicio1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cap8_Cap9"
+        mc:Ignorable="d"
+        Title="Productos" Height="305" Width="375">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10">
+            <StackPanel>
+                <Label Content="Nombre del Producto"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBox x:Name="NombreTextBox" Height="25"/>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Cantidad"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBox x:Name="TextBoxCantidad" Height="25"/>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Existencia"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBox x:Name="TextBoxExistencia" Height="25"/>
+            </StackPanel>
+            <Label Content="Descripcion"/>
+            <StackPanel>
+                <TextBox x:Name="TexboxtDescripcion" Height="25"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="GuardarProductos" Content="Guardar" Height="25" Width="70" Margin="3,10,0,0" Click="GuardarProductos_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
